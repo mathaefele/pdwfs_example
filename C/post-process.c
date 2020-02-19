@@ -6,7 +6,7 @@
 #define N_LINES 20
 
 
-void read_scanf(char* res)
+void read_fscanf(char* res)
 {
   FILE* f = fopen("staged/Cpok", "r");
   fscanf(f, "%s", res);
@@ -36,7 +36,7 @@ int main()
   gethostname(hostname, STR_SIZE);
   printf("post-process: running on host %s\n", hostname);
 
-  //read_scanf(res);
+  //read_fscanf(res);
   read_fread(res);
 
   printf("post-process: %s\n", res);
