@@ -1,5 +1,6 @@
 redis-server --daemonize yes
 
+mkdir -p staged
 echo "########### Launching simu ##############"
 pdwfs -t -p $PWD/staged -- ./simu
 redis-cli dump "/local/home/mhaefele/ownCloud/work/dev/hello_worlds/pdwfs/C/staged/Cpok:0"
