@@ -2,7 +2,7 @@
 #SBATCH --job-name=pdwfs_hello
 #SBATCH --time=0:02:00
 #SBATCH --nodes=2
-#SBATCH --exclude=miriel044,miriel045
+#SBATCH --exclude=miriel044,miriel045,miriel002,miriel003
 
 work_directory="${SLURM_JOB_NAME}_${SLURM_JOB_ID}"
 mkdir -p "${work_directory}/staged"
